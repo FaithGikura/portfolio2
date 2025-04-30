@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="portfolio-container">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>UI Portfolio</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#pages">Pages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="cta-buttons">
+        <button class="hire-me-btn">Hire Me</button>
+        <button class="search-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="theme-toggle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2V4M12 20V22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M2 12H4M20 12H22M4.93 19.07L6.34 17.66M17.66 6.34L19.07 4.93" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav">
+      <div class="side-nav-item active">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="side-nav-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 21V5M5 21V5M5 5C5 3.89543 5.89543 3 7 3H17C18.1046 3 19 3.89543 19 5M5 5H19M9 9H15M9 13H15M9 17H13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Back</span>
+      </div>
+      <div class="side-nav-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.9987 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.9987 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Download</span>
+      </div>
+      <div class="side-nav-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 6L18 8L22 4M8.21 13.89L20 2.1M8.21 13.89L11 16.68L8.21 13.89ZM8.21 13.89L2 20.1L8.21 13.89Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Buy</span>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Hi, I'm John Watson</h2>
+        <h1>Web Dev</h1>
+        <p>
+          I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away!
+        </p>
+        <div class="hero-buttons">
+          <button class="hire-me-btn">Hire Me</button>
+          <button class="portfolio-btn">My Portfolio</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/p5.jpg" alt="John Watson" class="profile-image" />
+      </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section class="biography-section">
+      <div class="bio-image">
+        <img src="images/p2.jpg" alt="John Watson Profile" class="profile-image-secondary" />
+      </div>
+      <div class="bio-content">
+        <span class="section-label">MY BIOGRAPHY</span>
+        <h2>A Lead UI Designer & Web Developer Based In UK</h2>
+        <p>
+          I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away! Contact me and we will discuss your projects!
+        </p>
+        
+        <div class="bio-details">
+          <div class="bio-row">
+            <div class="bio-item">
+              <span class="bio-label">Name:</span>
+              <span class="bio-value">John Watson</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">From:</span>
+              <span class="bio-value">London, UK</span>
+            </div>
+          </div>
+          <div class="bio-row">
+            <div class="bio-item">
+              <span class="bio-label">Email:</span>
+              <span class="bio-value">example@mail.com</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Phone:</span>
+              <span class="bio-value">+21 234 567 8901</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <p>Follow me on</p>
+          <div class="social-icons">
+            <a href="images/behance.svg" class="social-icon">Be</a>
+            <a href="images/linkedin.svg" class="social-icon">In</a>
+            <a href="images/twitter.svg" class="social-icon">Tw</a>
+            <a href="images/facebook.svg" class="social-icon">FB</a>
+          </div>
+          <div class="cta-buttons">
+            <button class="hire-me-btn">Hire Me</button>
+            <button class="search-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="cta-buttons">
+                <button class="download-cv-btn">Download cv</button>
+                <button class="search-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                
+        </div>
+      </div>
+    </section>
+    <section class="services-section">
+        <div class="container">
+          <h2 class="section-title">What I Do For You</h2>
+          
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 8H17" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 12H17" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 16H13" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-description">Sed ut perspiciatis unde omnis iste natus error sit accussa ntium dolor emque laudan.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="9" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 7V12L15 15" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">App Development</h3>
+              <p class="service-description">Sed ut perspiciatis unde omnis iste natus error sit accussa ntium dolor emque laudan.</p>
+            </div>
+            
+            <div class="service-card">
+              <div class="service-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 8H15.01" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 14L8 9L13 14L21 6" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Photography</h3>
+              <p class="service-description">Sed ut perspiciatis unde omnis iste natus error sit accussa ntium dolor emque laudan.</p>
+            </div>
+          </div>
+          
+          <a href="#" class="more-services-btn">
+            More Services 
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 5px;">
+              <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+    
+      <!-- Skills Section -->
+      <section class="skills-section">
+        <div class="container">
+          <div class="skills-container">
+            <div class="skills-image">
+              <img src="images/p12.jpg" alt="Creative workspace with tablet and stationery">
+            </div>
+            
+            <div class="skills-content">
+              <span class="skills-subtitle">MY SKILLS</span>
+              <h2 class="skills-title">My Featured Skills</h2>
+              
+              <p class="skills-description">
+                I Specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work. And I always ready to impress the audience with my Creativity.
+              </p>
+              
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">UI/UX Design</span>
+                  <span class="skill-percent"></span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+              
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Ideas & Technology</span>
+                  <span class="skill-percent"></span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+              
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Branding Design</span>
+                  <span class="skill-percent"></span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 70%;"></div>
+                </div>
+              </div>
+              
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Web Design</span>
+                  <span class="skill-percent"></span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services-image-section">
+        <div class="container services-image-container">
+          <div class="services-left">
+            <div class="service-item">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 19H21V21H3V19Z" fill="#00B894"/>
+                  <path d="M13 9H21V17H13V9Z" fill="#00B894"/>
+                  <path d="M3 9H11V17H3V9Z" fill="#00B894"/>
+                  <path d="M3 5H11V7H3V5Z" fill="#00B894"/>
+                  <path d="M13 5H21V7H13V5Z" fill="#00B894"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 18.5L4 13.5V7.5L12 2.5L20 7.5V13.5L12 18.5Z" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 22V18.5" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 20V15" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 20V15" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3>Design Trends</h3>
+                <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 3V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H19" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H14L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21Z" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17H15" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 13H15" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3>Research & Analysis</h3>
+                <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 20.0009 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C3.99913 9.92179 4.44057 8.37488 5.27071 7.03258C6.10085 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3>Customer Support</h3>
+                <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 12H15V19" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 5H9V12" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="service-content">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <div class="service-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 9H22" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 15H22" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.5 2L7.5 22" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5 2L14.5 22" stroke="#00B894" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <div class="service-content">
+                <h3>PSD Design</h3>
+                <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="services-right">
+            <img src="images/p2.jpg" alt="Professional service provider">
+          </div>
+        </div>
+      </section>
+    
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-number">135</div>
+              <div class="stat-label">Finished Projects</div>
+            </div>
+            
+            <div class="stat-item">
+              <div class="stat-number">225</div>
+              <div class="stat-label">Working Hours</div>
+            </div>
+            
+            <div class="stat-item">
+              <div class="stat-number">115</div>
+              <div class="stat-label">Online Support</div>
+            </div>
+            
+            <div class="stat-item">
+              <div class="stat-number">272</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Portfolio Section -->
+      <section class="portfolio-section">
+        <div class="container">
+          <h2 class="section-title">My Success Work</h2>
+          
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="images/p6.jpg" alt="Portfolio item 1">
+            </div>
+            
+            <div class="portfolio-item">
+              <img src="images/p7.jpg" alt="Portfolio item 2">
+            </div>
+            
+            <div class="portfolio-item">
+              <img src="images/p8.jpg" alt="Portfolio item 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="images/p9.jpg" alt="Portfolio item 1">
+              </div>
+              <div class="portfolio-item">
+                <img src="images/p10.jpg" alt="Portfolio item 1">
+              </div>
+              <div class="portfolio-item">
+                <img src="images/p11.jpg" alt="Portfolio item 1">
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="logo-section">
+        <div class="logos">
+            <img src="images/p13.jpg"Gluten Free">
+            <img src="images/p3.jpg" alt="Massage and Spa">
+            <img src="images/p4.jpg" alt="Butchery">
+            <img src="images/p4.jpg" alt="Natural Product">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>UI Portfolio</h2>
+            <div class="contact-info">
+                <p>+12 345 678 900</p>
+                <p>info@example.com</p>
+                <p> 208 Avenue street, UK - 62617.</p>
+            </div>
+            <div class="social-icons">
+                <a href="images/behance.svg" class="social-icon">Be</a>
+                <a href="images/linkedin.svg" class="social-icon">In</a>
+                <a href="images/twitter.svg" class="social-icon">Tw</a>
+                <a href="images/facebook.svg" class="social-icon">FB</a>
+              </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 UI Portfolio. All Rights Reserved</p>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
